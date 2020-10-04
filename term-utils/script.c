@@ -364,7 +364,7 @@ dooutput(FILE *timingfd) {
 #endif
 	tvec = time((time_t *)NULL);
 	my_strftime(obuf, sizeof obuf, "%c\n", localtime(&tvec));
-	fprintf(fscript, _("Script started on %s"), obuf);
+	//fprintf(fscript, _("Script started on %s"), obuf);
 
 	do {
 		if (die && flgs == 0) {
